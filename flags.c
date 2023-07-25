@@ -3,6 +3,7 @@
 /**
  * get_flags - determines the  active number of  flags
  * @format: Formatted string in which to print the arguments
+ * Written by Joylene Edited By Tuwei
  * @i: take a parameter.
  * Return: Flags:
  */
