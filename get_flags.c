@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
  * get_flags - Calculate active flags in a formatted string.
  *
  * This function scans the provided formatted string to find and calculate
  * the active flags that represent various formatting options.
- *
+ * Mathew & Joylene
  * @format: The formatted string to search for flags.
  * @index: Pointer to the current index in the format string.
  *
