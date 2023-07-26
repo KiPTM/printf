@@ -16,9 +16,21 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
+
 /**
- *Prints a string
-*/
+ * print_string - Prints a string.
+ *
+ * This function prints the given string to the standard output.
+ *
+ * @types: List of arguments (va_list).
+ * @buffer: Buffer array to handle print.
+ * @flags: Active flags that control the formatting.
+ * @width: Width.
+ * @precision: Precision specification.
+ * @size: Size specifier.
+ *
+ * Return: Number of characters printed.
+ */
 
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -64,12 +76,18 @@ int print_string(va_list types, char buffer[],
 
 	return (write(1, str, length));
 }
-
 /**
  * prints a percentage sign
+ * This function prints the percentage sign to the standard output.
+ * @types: List of arguments (va_list).
+ * @buffer: Buffer array to handle print.
+ * @flags: Active flags that control the formatting.
+ * @width: Width.
+ * @precision: Precision specification.
+ * @size: Size specifier.
  *
+ * Return: Number of characters printed.
  */
-
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -82,7 +100,23 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 
-/**Prints an integer*/
+/**
+ * Prints an integer
+ *
+ * This function prints the given integer to the standard output.
+ *
+ * @types: List of arguments (va_list).
+ * @buffer: Buffer array to handle print.
+ * @flags: Active flags that control the formatting.
+ * @width: Width.
+ * @precision: Precision specification.
+ * @size: Size specifier.
+ *
+ * Return: Number of characters printed.
+ */
+
+
+
 
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -117,7 +151,21 @@ int print_int(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
-/**prints a binary*/
+/**prints a binary
+ *
+ * This function prints the binary representation of the given unsigned integer
+ * 
+ * to the standard output.
+ *
+ * @types: List of arguments (va_list).
+ * @buffer: Buffer array to handle print.
+ * @flags: Active flags that control the formatting.
+ * @width: Width.
+ * @precision: Precision specification.
+ * @size: Size specifier.
+ *
+ * Return: Number of characters printed.
+ */
 
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
