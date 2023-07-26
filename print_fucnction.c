@@ -16,7 +16,6 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-
 /**
  * @print_string - Prints a string.
  *
@@ -31,7 +30,6 @@ int print_char(va_list types, char buffer[],
  *
  * Return: Number of characters printed.
  */
-
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -99,7 +97,6 @@ int print_percent(va_list types, char buffer[],
 	UNUSED(size);
 	return (write(1, "%%", 1));
 }
-
 /**
  * @print_int - Prints an integer
  *
@@ -114,10 +111,6 @@ int print_percent(va_list types, char buffer[],
  *
  * Return: Number of characters printed.
  */
-
-
-
-
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -150,7 +143,6 @@ int print_int(va_list types, char buffer[],
 
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
-
 /**
  *@print_binary - prints a binary
  *
@@ -167,7 +159,6 @@ int print_int(va_list types, char buffer[],
  *
  * Return: Number of characters printed.
  */
-
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
